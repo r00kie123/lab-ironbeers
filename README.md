@@ -99,10 +99,17 @@ punkAPI
 #### 3.2 The `beers.hbs` view
 
 - Create a `beers.hbs` file to render every time we call this route.
-- This file should have access to the beers we get as a response from the database. Remember, you should call the `render` method after getting the _beers_ array. _Hint:_ That means inside of the function you're passing to the `then` method. :wink:
+
+
+
+
+
+- This file should have access to the beers we get as a response from the database. Remember, you should call the `render` method after getting the _beers_ array, inside of the function you're passing to the `then` method. :wink:
 - On the `beers.hbs` view, loop over the **array of beers** using an `{{#each}}` loop. Display an **image**, **name**, **description** and **tagline**.
 
 Now, when you click on the `Beers` link on the top navigation or on the `Check the beers` button, you should be able to see all the beers. Boom! :boom:
+
+
 
 ### Iteration 4 - Random beer _page_
 
