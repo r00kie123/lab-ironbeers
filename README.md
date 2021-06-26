@@ -174,9 +174,26 @@ You should create a partial to show each beer.
 hbs.registerPartials(path.join(__dirname, 'views/partials'));
 ```
 
+
+
+
+
+
+
+
+
+
+
+
 - Next, you should create a `partials` folder inside the `views`, and `beerpartial.hbs` file inside the `partials` folder (**Note**: We're not including dashes in the `hbs` partial names, since handlebars partials need to follow the same naming conventions as JavaScript variables).
+
+
+
 - Our `beerpartial.hbs` will display the properties that both views share: **image**, **name**, **description**, and **tagline** of the beer.
+
 - Now, you can go ahead and plug in this partial in the `beers.hbs` view inside the `each` loop.
+
+
 
 After creating the partial, and looping over the array of beers, on our `/beers` route, we should have the following:
 

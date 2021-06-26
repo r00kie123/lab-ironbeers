@@ -4,10 +4,7 @@
 {{#each beer}}
 
 
-<img src="{{this.image_url}}" alt="some beer">
-<h2>{{this.name}}</h2> 
-<h3>{{this.tagline}}</h3> 
-<h4>{{this.description}} </h4> 
+{{>beerpartial this}}
 <h5>{{this.food_pairing}}</h5>
 <h5>{{this.brewers_tips}}</h5>
 

@@ -18,7 +18,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 // Register the location for handlebars partials here:
-
 hbs.registerPartials(path.join(__dirname, 'views/partials'))
 
 // Add the route handlers here:
@@ -34,8 +33,8 @@ app.get('/beers', (req, res, next)=> {
 
   punkAPI
   .getBeers()
-  .then((beersFromdb)=> {
-  res.render('beers', {beers: beersFromdb});                 //oder nur 'beers ohne extension?'
+  .then((beers)=> {
+  res.render('beers', {beers});              //funktioniert mit und ohne file-extension
   })
   .catch(err => console.log(err))
 
